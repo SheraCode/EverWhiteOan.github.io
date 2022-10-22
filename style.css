@@ -1,0 +1,20 @@
+.judul {
+    font-family: 'Lobster', cursive;
+    margin-left: 600px;
+    margin-top: -760px;
+}
+body {
+    background-image: url(Asset/Gambar/backgroundlogin.png);
+}
+.subjudul {
+    margin-left: 650px;
+}
+.form-floating {
+
+    margin-left: 600px;
+    width: 450px;
+}
+.carousel-inner {
+    width: 300px;
+}
+
