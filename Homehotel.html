@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        
+        .labersa img{
+            
+            transition: transform 2s;
+        }
+        .labersa:hover img{
+            transform: scale(1.1);
+        }
+        .tombol button{
+            
+            transition: transform 2s;
+        }
+        .tombol:hover button{
+            transform: scale(1.1);
+        }
+        .apa {
+            background-color: aqua;
+        }
+    </style>
+    <title>Sewa Hotel</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-primary text-white">
+      <div class="container-fluid">
+        <img src="Asset/Gambar/Logo.jpg" alt="Bootstrap" width="70" height="43">
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation text-white">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white disabled" href="Homehotel.html">Sewa Hotel</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Endnavbar-->
+    <div class="p-3 mb-2">
+      <div class="bg-success">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 p-3 m-5">
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                    <img src="img/Labersahotel.jpg"class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Labersa Toba Hotel & Conventional</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-bath' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-bed' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-swimmer' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+                  <br><br>
+                  <p class="card-text">Labersa Toba Hotel & Conventional adalah Hotel dengan fasilitas terlengkap yang ada di balige,Toba Samosir, Sumatera Utara.</p>
+                  
+                  <div class="tombol">
+                      <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                      <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                      <button type="button" class="btn btn-outline-secondary"><a href="https://g.page/labersatobahotelbalige?share" class="text-decoration-none">Lokasi Hotel</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                    <img src="img/mutiarahotel.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Mutiara Hotel</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                  <p class="card-text">Hotel Mutiara terletak tepat di kota Balige dan disekelilingi oleh temat wisata yang menarik.</p>
+                  
+                  <div class="tombol">
+                    <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                    <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                    <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/E8NP7nk31LykmLZ98" class="text-decoration-none">Lokasi Hotel</a></button>
+                </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                  <img src="img/RAPhotel.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">RAP Hotel</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                  <p class="card-text">RAP Hotel adalah salah satu hotel yang ada dibalge dengan suasana hotel yang bergaya modern dengan harga yang ramah dikantong para wisatawan.</p>
+                  <div class="tombol">
+                    <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                    <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                    <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/DoXpHiFV2rm5rsx59" class="text-decoration-none">Lokasi Hotel</a></button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+          <div class="bg-warning">
+            <div class="bg-info">
+
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 p-3 m-5">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="labersa">
+                      <img src="img/Sapadiahotel.jpg"class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Sapadia Villa Balige</h5>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <br>
+                    <i class='fas fa-wifi' ></i>
+                    <i class='fas fa-shower'></i>
+                    <i class='fas fa-car'></i>
+                    <i class='fas fa-bed'></i>
+                    <i class='fas fa-bath'></i>
+                    <br><br>
+                    <p class="card-text">Sapadia Hotel adalah salah satu hotel yang terdapat di Balige dengan gaya yang minimalis serta dekat dengan objek wisata yang berada di balige.</p>
+                    
+                    <div class="tombol">
+                        <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                        <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                        <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/D7zTNRxuA71SZrHy5" class="text-decoration-none">Lokasi Hotel</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col">
+                <div class="card h-100">
+                  <div class="labersa">
+                      <img src="img/ompuherti.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Ompu Herti Balige</h5>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <br>
+                    <i class='fas fa-swimming-pool'></i>
+                    <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                    <p class="card-text">Hotel Ompu Herti berada di Balige dengan pelayanan hotel yang baik serta fasilitas yang memuaskan.</p>
+                    
+                    <div class="tombol">
+                      <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                      <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                      <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/sw8114GMpD6jF3iC7" class="text-decoration-none">Lokasi Hotel</a></button>
+                  </div>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="labersa">
+                    <img src="img/hotel-nabasa.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Hotel Nabasa Balige</h5>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <br>
+                    <i class='fas fa-umbrella-beach'></i>
+                    <i class='fas fa-coffee'></i>
+                    <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                    <p class="card-text">Hotel Nabasa adalah salah satu hotel yang memiliki View langsung ke Danau Toba sehingga akan mendapatkan pengalaman yang berbeda saat menginap.</p>
+                    <div class="tombol">
+                      <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                      <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                      <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/kv6Kn6296vtyHyhW9" class="text-decoration-none">Lokasi Hotel</a></button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="bg-info">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 p-3 m-5">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="labersa">
+                      <img src="img/ItaSoposorunghotel.jpeg"class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Hotel Ita Soposurung Balige</h5>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <br>
+                    <i class='fas fa-bath' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-bed' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-swimmer' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+                    <br><br>
+                    <p class="card-text">Hotel Ita Soposurung bukan hanya menyediakan Hotel saja, tetapi ada juga Restaurant yang memiliki pelayanan yang baik.</p>
+                    
+                    <div class="tombol">
+                        <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                        <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                        <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/A1KxRgNytDqBN8jg6" class="text-decoration-none">Lokasi Hotel</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col">
+                <div class="card h-100">
+                  <div class="labersa">
+                      <img src="img/JSHOTEL.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">JS Hotel Balige</h5>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i><i class='fas fa-star' style="color:gold;"></i>
+                    <br>
+                    <i class='fas fa-coffee'></i>
+                    <i class='fas fa-smoking'></i>
+                    <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                    <p class="card-text">JS Hotel ada salah satu hotel yang menyediakan penyewaan dengan kurun waktu,sehingga jika mau menyewa hotel tersebut selama berbulan-bulan maka akan ada pengurangan harga sewa.</p>
+                    
+                    <div class="tombol">
+                      <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                      <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                      <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/5xkrtk9zsxmcLf996" class="text-decoration-none">Lokasi Hotel</a></button>
+                  </div>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="labersa">
+                    <img src="img/Serenaulihotel.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Sere Nauli Hotel</h5>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i><i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <br>
+                    <i class='fas fa-car' 
+                    style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-shower'></i>
+                    <i class='fas fa-smoking'></i>
+                    <i class='fas fa-suitcase'></i>
+                    <i class='fas fa-swimming-pool'></i>
+                    <i class='fas fa-concierge-bell'></i>
+                    <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                    <p class="card-text">Sere Nauli Hotel adalah hotel termewah di Laguboti dengan fasilitas dan kenyamanan yang sempurna.</p>
+                    <div class="tombol">
+                      <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                      <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                      <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/6tXhqkjAnau1cfXa7" class="text-decoration-none">Lokasi Hotel</a></button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-danger">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 p-3 m-5">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="labersa">
+                      <img src="img/Grandmareda.jpg"class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Grand Mareda Hotel</h5>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <br>
+                    <i class='fas fa-bath' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-bed' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+                    <br><br>
+                    <p class="card-text">Grand Mareda adalah salah satu hotel yang terletak di Laguboti dengan desain yang minimalis.</p>
+                    
+                    <div class="tombol">
+                        <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                        <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                        <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/YUnmqyx8DAoCKCMr6" class="text-decoration-none">Lokasi Hotel</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col">
+                <div class="card h-100">
+                  <div class="labersa">
+                      <img src="img/bobocabin.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bobocabin Signature Toba</h5>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <br>
+                    <i class='fas fa-concierge-bell'></i>
+                    <i class='fas fa-coffee'></i>
+                    <i class='fas fa-smoking-ban'></i>
+                    <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                    <p class="card-text">Bobocabin Signature Toba adalah salah satu hotel yang sangat berbeda dengan yang lain,dimana hotel ini sangat memberikan pengalaman kepada para pengunjung bagaimana tidur di alam bebas.</p>
+                    
+                    <div class="tombol">
+                      <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                      <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                      <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/M7pM339hpBsLLENZ6" class="text-decoration-none">Lokasi Hotel</a></button>
+                  </div>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="labersa">
+                    <img src="img/Hotelniagara.jpeg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Hotel Niagara</h5>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <i class='fas fa-star' style="color:gold;"></i>
+                    <br>
+                    <i class='fas fa-bath'></i>
+                    <i class='fas fa-bed'></i>
+                    <i class='fas fa-briefcase'></i>
+                    <i class='fas fa-concierge-bell'></i>
+                    <i class='fas fa-shower'></i><i class='fas fa-swimming-pool'></i>
+                    <i class='fas fa-wheelchair'></i>
+                    <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                    <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                    <p class="card-text">Hotel Niagara adalah salah satu hotel yang termewah di Parapat,hotel ini memberikan kesan terbaik kepada orang yang menginap di hotel tersebut.</p>
+                    <div class="tombol">
+                      <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                      <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                      <button type="button" class="btn btn-outline-secondary"><a href="https://g.page/niagara-hotel-lake-toba-resorts?share" class="text-decoration-none">Lokasi Hotel</a></button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 p-3 m-5">
+          <div class="col">
+            <div class="card h-100">
+              <div class="labersa">
+                  <img src="img/tobacottage.jpg"class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Danau Toba International Cottage Parapat</h5>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <br>
+                <i class='fas fa-bath' style="color:rgb(109, 110, 112);"></i>
+                <i class='fas fa-bed' style="color:rgb(109, 110, 112);"></i>
+                <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+                <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+                <i class='fas fa-swimmer' style="color:rgb(109, 110, 112);"></i>
+                <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                <br><br>
+                <p class="card-text">Danau Toba International Cottage Parapat adalah hotel yang berada di parapat dengan view langsung ke Danau Toba.</p>
+                
+                <div class="tombol">
+                    <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                    <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                    <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/rRQrd5DG1GqfHw7j6" class="text-decoration-none">Lokasi Hotel</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col">
+            <div class="card h-100">
+              <div class="labersa">
+                  <img src="img/Hotelbudimulia.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Hotel Budi Mulya</h5>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <br>
+                <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                <p class="card-text">Hotel Budi Mulia berada tepat di pinggir jalan Ajibata yang view depannya langsung Danau Toba.</p>
+                
+                <div class="tombol">
+                  <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                  <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                  <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/Ep5LBTzjMLvrUhMPA" class="text-decoration-none">Lokasi Hotel</a></button>
+              </div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="labersa">
+                <img src="img/Patrahotel.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Patra Comfort Parapat</h5>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <i class='fas fa-star' style="color:gold;"></i>
+                <br>
+                <i class='fas fa-swimming-pool'></i>
+                <i class='fas fa-shower'></i>
+                <i class='fas fa-concierge-bell'></i>
+                <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                <p class="card-text">Patra Comfort Parapat adalah hotel yang letaknya di daerah parapat,tetapi hotel ini ingin mengambil view yang bagus dari kejauhan.</p>
+                <div class="tombol">
+                  <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                  <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                  <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/T2HBqtWGhq9WRw4t9" class="text-decoration-none">Lokasi Hotel</a></button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-info">
+
+          <div class="row row-cols-1 row-cols-md-3 g-4 p-3 m-5">
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                    <img src="img/siantarhotelparapat.jpg"class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Siantar Hotel Parapat</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-bath' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-bed' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-swimmer' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+                  <br><br>
+                  <p class="card-text">Siantar Hotel Parapat berada di tepi Danau Toba yang membuatnya memberikan kesan yang menarik ketika menginap di hotel tersebut.</p>
+                  
+                  <div class="tombol">
+                      <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                      <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                      <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/gzJY8dJrP35hyKXV8" class="text-decoration-none">Lokasi Hotel</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                    <img src="img/DamarHotel,jpg.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Damar Toba</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                  <p class="card-text">Damar Toba adalah hotel yang memiliki Restaurant yang berada di Tepi Danau Toba yang menjadikannya kesan yang menarik terhadap pengunjung.</p>
+                  
+                  <div class="tombol">
+                    <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                    <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                    <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/tGM2nxCGCAzt6TGv7" class="text-decoration-none">Lokasi Hotel</a></button>
+                </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                  <img src="img/hotelrumahadat.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Home Stay Ragi Hotang</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                  <p class="card-text">Home stay ini bernuansakan rumah adat Batak,yang dimana pengunjung bisa merasakan bagaimana tinggal di rumah adat Batak.</p>
+                  <div class="tombol">
+                    <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                    <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                    <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/A3Vnw7vdHWC7TRzLA" class="text-decoration-none">Lokasi Hotel</a></button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary">
+
+          <div class="row row-cols-1 row-cols-md-3 g-4 p-3 m-5">
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                    <img src="img/KHAS-PARAPAT.jpeg"class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">KHAS Parapat Hotel</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i><i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-bath' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-bed' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+                  <br><br>
+                  <p class="card-text">KHAS Parapat Hotel adalah seperti homestay yang bergaya perumahan dengan bernuansa seperti di perkampungan yang asri.</p>
+                  
+                  <div class="tombol">
+                      <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                      <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                      <button type="button" class="btn btn-outline-secondary"><a href="https://g.page/Khasparapat?share" class="text-decoration-none">Lokasi Hotel</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                    <img src="img/hotelsedayu.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Hotel Sedayu 2</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                  <p class="card-text">Hotel Sedayu 2 adalah hotel yang sangat ramah di kantong dikarenakan tarif yang terbilang murah dengan fasilitas yang lumayan lengkap.</p>
+                  
+                  <div class="tombol">
+                    <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                    <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                    <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/N5W9APrXjTdPEASV8" class="text-decoration-none">Lokasi Hotel</a></button>
+                </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                  <img src="img/atsarihotel.jpeg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Atasari Hotel</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-swimmer' style="color:rgb(109, 110, 112);"></i>
+                  <p class="card-text">Atasari Hotel adalah sebuah hotel bergaya cafe yang dimana didesain sedemikian rupa sehingga terkesan menarik ketika mengunjunginya.</p>
+                  <div class="tombol">
+                    <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                    <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                    <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/KypY6zigNLzdv747A" class="text-decoration-none">Lokasi Hotel</a></button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-warning">
+
+          <div class="row row-cols-1 row-cols-md-3 g-4 p-3 m-5">
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                    <img src="img/Tabocottage.jpg"class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Tabo Cottages Hotel</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-bath' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-bed' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-swimmer' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+                  <br><br>
+                  <p class="card-text">Tabo Cottages adalah hotel yang bernuansa Tropis yang berada tepat di tepi Danau Toba.</p>
+                  
+                  <div class="tombol">
+                      <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                      <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                      <button type="button" class="btn btn-outline-secondary"><a href="https://g.page/Tabocottages?share" class="text-decoration-none">Lokasi Hotel</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                    <img src="img/Zoe;sParadise.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Zoe's Paradise Waterfront Hotel</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-swimmer' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+                  <br><br>
+                  <p class="card-text">Zoe's paradise Waterfront Hotel adalah hotel yang memiliki fill sendiri ketika menginap,nikmati dan rasakan nuansa yang diberikan hotel ini.</p>
+                  
+                  <div class="tombol">
+                    <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                    <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                    <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/LcjcBx9k978vEHGq6" class="text-decoration-none">Lokasi Hotel</a></button>
+                </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="labersa">
+                  <img src="img/tobabeachhotel.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Toba Beach Hotel</h5>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <i class='fas fa-star' style="color:gold;"></i>
+                  <br>
+                  <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-swimmer' style="color:rgb(109, 110, 112);"></i>
+                  <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+                  <br><br>
+                  <p class="card-text">RAP Hotel adalah salah satu hotel yang ada dibalge dengan suasana hotel yang bergaya modern dengan harga yang ramah dikantong para wisatawan.</p>
+                  <div class="tombol">
+                    <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                    <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                    <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/HyRxQu9jhqfvTYS18" class="text-decoration-none">Lokasi Hotel</a></button>
+                    
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+        </div>
+    <div class="bg-primary">
+      <div class="row row-cols-1 row-cols-md-3 g-4 p-3 m-5">
+        <div class="col">
+          <div class="card h-100">
+            <div class="labersa">
+                <img src="img/Hoteltoledoinn.jpg"class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">toledo inn parapat</h5>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <br>
+              <i class='fas fa-bath' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-bed' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-swimmer' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+              <br><br>
+              <p class="card-text">toledo inn parapat adalah hotel yang dimana masih mempunyai bangunan yang memodelkan bangunan lama,sehingga para pengunjung bisa merasakan bangunan tersebut.</p>
+              
+              <div class="tombol">
+                  <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                  <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                  <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/xob1K3dKQGUt4hcH9" class="text-decoration-none">Lokasi Hotel</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col">
+          <div class="card h-100">
+            <div class="labersa">
+                <img src="img/Parapatviewhotel.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">The Parapat View Hotel</h5>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <br>
+              <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-swimmer' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+              <br><br>
+              <p class="card-text">The Parapat View Hotel memberikan pemandangan yang sangat memanjakan mata para pengunjung yang dimana view dari hotel tersebut langsung ke Danau Toba.</p>
+              
+              <div class="tombol">
+                <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                <button type="button" class="btn btn-outline-secondary"><a href="https://goo.gl/maps/AtQL9P6kUNTc8tK46" class="text-decoration-none">Lokasi Hotel</a></button>
+            </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="labersa">
+              <img src="img/lakeside.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Hotel Pandu Parapat</h5>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <i class='fas fa-star' style="color:gold;"></i>
+              <br>
+              <i class='fas fa-car' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-wifi' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-hotel' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-coffee' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-shower' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-swimmer' style="color:rgb(109, 110, 112);"></i>
+              <i class='fas fa-wheelchair' style="color:rgb(109, 110, 112);"></i>
+              <br><br>
+              <p class="card-text">Hotel Pandu Parapat memberikan pemandangan dan lingkungan hotel yang asri dimana view dari hotel tersebut langsung ke Danau Toba.</p>
+              <div class="tombol">
+                <button type="button" class="btn btn-outline-info button"><a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=6282161916411&text=Halo%20Resepsionis%20Saya%20Mau%20Bertanya">Info lanjut</a></button>
+                <button type="button" class="btn btn-outline-warning booking" data-toggle="modal" data-target="#contohModal"><a class="text-decoration-none" href="checkin.html">Booking Sekarang</a></button>
+                <button type="button" class="btn btn-outline-secondary"><a href="https://g.page/hotelpanduparapat?share" class="text-decoration-none">Lokasi Hotel</a></button>
+                
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+    </div>
+      <div>
+        <h3 class="text-center">EVERWHITE</h3>
+        <p class="text-center">Everwhite is a programming language-themed website that can be learned for free and is easily accessible to all of you <br> <b>My Social Media</b></p>
+      </div>
+      <div class="text-center">
+        <i class="fab fa-instagram p-5 m-3" style="font-size:48px;color:red"></i>
+        <i class="fab fa-facebook-f p-5 m-3" style="font-size:48px;color:blue"></i>
+        <i class="fab fa-twitter p-5 m-3" style="font-size:48px;color:rgb(3, 80, 245)"></i>
+        <i class="fab fa-linkedin p-5 m-3" style="font-size:48px;color:rgb(54, 57, 226)"></i>
+        <i class="fab fa-youtube-play p-5 m-3" style="font-size:48px;color:red"></i>
+      </div>
+    
+
+      
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>
